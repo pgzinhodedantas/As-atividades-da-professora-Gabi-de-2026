@@ -6,9 +6,9 @@ programa{
        leia(numero)
        para(i=1; i<=numero; i++){
         soma = soma + i
-        i + i + 1 
 
-        escreva(i,"\n")
+        escreva("soma =", soma)
        }
     }
+
 }
