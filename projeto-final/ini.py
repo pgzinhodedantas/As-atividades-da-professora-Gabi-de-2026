@@ -20,22 +20,23 @@ while True:
         continue  # para volta ao menu
 
     if opcao == 1:
-        print(">> Cadastrar Produto (em construção)")
+       print(" Digite um Produto ")
+    
     
     elif opcao == 2:
-        print(">> Listar Produtos (em construção)")
+        print(" Digite um Listar Produtos ")
     
     elif opcao == 3:
-        print(">> Buscar Produto (em construção)")
+        print(" Digite Buscar Produto ")
     
     elif opcao == 4:
-        print(">> Editar Produto (em construção)")
+        print(" Digite Editar Produto ")
     
     elif opcao == 5:
-        print(">> Excluir Produto (em construção)")
+        print(" Digite Excluir Produto")
     
     elif opcao == 6:
-        print(">> Gerar Relatório (em construção)")
+        print(" Digite Gerar Relatório")
     
     elif opcao == 0:
         print("Encerrando o sistema...")
@@ -53,7 +54,7 @@ def cadastrar_produtor():
             preco = float(input("preço: "))
             quantidade = int(input("quantidade:"))
 
-            # validação (Dados validos?)
+           
             if nome == "" or preco < 0 or quantidade < 0:
                 continue 
 
@@ -62,7 +63,7 @@ def cadastrar_produtor():
             continue
 
 
-        # Dados válidos → salvar produto
+        
         produto = {
             "id": len(produto) + 1,
             "nome": nome,
